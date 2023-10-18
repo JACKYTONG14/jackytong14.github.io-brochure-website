@@ -1,41 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>BMW M5 Brochure Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <section>
-        <header>
-            <a href="#"><img src="BMW logo.png" class="logo"></a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </header>
-        <div class="content">
-            <div class="textBox">
-                <h2>It's not just a Car it's<br> <span>Ultimate Driving Machine</span></h2>
-                <p>Packed with power and made to maneuver, BMW M excels on the track and in the street. And after four decades of thrills, it’s still pushing the limits. Grip the wheel of any of our M vehicles and elevate your adrenaline rushes to a higher level.</p>
-                <a href="#">Learn More</a>
-            </div>
-          <div class="hero">
-              <img src="M5CS.webp" class="BMW">
-          </div>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMW M Performance</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="BMW logo.png"></a>
+                <a href="index.html"><img src="BMW M logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="magazine.html">Magazine</a></li>
+                        <li><a href="models.html">Models</a></li>
+                        <li><a href="">Motorsport</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <h1>The Ultimate Driving Machine</h1>
+            <p>Packed with power and made to maneuver, BMW M excels on the track and in the street. <br>And after four decades of thrills, it’s still pushing the limits. Grip the wheel of any of our <br>M vehicles and elevate your adrenaline rushes to a higher level.
+            </p>
+            <a href="https://www.bmw-m.com/en/topics/all-models.html" class="hero-btn">Learn More</a>
         </div>
-        <ul class="models">
-            <li><img src="m5cs.png"></li>
-            <li><img src="M5COMP.png"></li>
-            <li><img src="m5.png"></li>
-        </ul>
-        <ul class="sci">
-            <li><a href="#"><img src="facebook.png"></a></li>
-            <li><a href="#"><img src="twitter.png"></a></li>
-            <li><a href="#"><img src="instagram.png"></a></li>
-        </ul>
-    </section>>
-</body>
+
+        </section>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    </body>
 </html>
